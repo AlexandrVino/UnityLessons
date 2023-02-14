@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 227ceabbee9112a46a4f754d7eb0e75e
+guid: 32b061e5f64dbba4c9fa8b63d6e0c470
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_0
+      name: GreyCat_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 454
-        width: 97
-        height: 128
+        x: 2
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c414d16996dc704992cca53c26fc688
-      internalID: 71918047
+      spriteID: 15601d1e9207c65479e700443914d3f7
+      internalID: -1510073340
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_1
+      name: GreyCat_1
       rect:
         serializedVersion: 2
-        x: 122
-        y: 453
-        width: 128
-        height: 128
+        x: 26
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dafbbe3cf69227f4e96282a30c45d359
-      internalID: -532854928
+      spriteID: 02310ca358869da46969e513139c7226
+      internalID: 1953721146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_2
+      name: GreyCat_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 453
-        width: 97
-        height: 128
+        x: 51
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5ea2f48dbe1cff4c834d91f189b3b85
-      internalID: 927590489
+      spriteID: 75582e676bf7cd24e91e99ec4a339ac0
+      internalID: -1387281313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_3
+      name: GreyCat_3
       rect:
         serializedVersion: 2
-        x: 364
-        y: 452
-        width: 128
-        height: 128
+        x: 76
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9919d535464ecd4dbdf322a3570f0f7
-      internalID: -1666868780
+      spriteID: 999964700397307478fd743c29330ed9
+      internalID: -2066206740
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_4
+      name: GreyCat_4
       rect:
         serializedVersion: 2
-        x: 498
-        y: 452
-        width: 128
-        height: 128
+        x: 101
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baee723ce8f399449b8aa9248f8bdcb3
-      internalID: 212182268
+      spriteID: 5545ef693839cfe41b71677abe77c1c4
+      internalID: 166052788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_5
+      name: GreyCat_5
       rect:
         serializedVersion: 2
-        x: 632
-        y: 452
-        width: 128
-        height: 128
+        x: 126
+        y: 276
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e006f171ce1eb4aad8480452ac0fe4
-      internalID: 259353855
+      spriteID: d8836acde03a2474e96b713c14c89a8d
+      internalID: 528448992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_6
+      name: GreyCat_6
       rect:
         serializedVersion: 2
-        x: 770
-        y: 452
-        width: 128
-        height: 128
+        x: 3
+        y: 251
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ff40e99dfe431f4a81d0ab699035b08
-      internalID: -230808934
+      spriteID: 6bacda786060e5643b27f5c0e89b4450
+      internalID: -762655135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_7
+      name: GreyCat_7
       rect:
         serializedVersion: 2
-        x: 90
-        y: 314
-        width: 128
-        height: 128
+        x: 37
+        y: 251
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14c8541a564556141a98e09a3f44c205
-      internalID: 1543719014
+      spriteID: d9d7342e038888b4ca0abf0587f18192
+      internalID: -932384451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_8
+      name: GreyCat_8
       rect:
         serializedVersion: 2
-        x: 228
-        y: 315
-        width: 128
-        height: 127
+        x: 71
+        y: 251
+        width: 24
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7af500578fea69d47a52227c58660809
-      internalID: 3623045
+      spriteID: b0a99d7b6a89e324fa14c814db1cd2fa
+      internalID: 1561073103
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_9
+      name: GreyCat_9
       rect:
         serializedVersion: 2
-        x: 362
-        y: 315
-        width: 128
-        height: 128
+        x: 5
+        y: 225
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945f9075d6399b34884b85a2514e683a
-      internalID: 1359205669
+      spriteID: c7b856f46fc898944897bcefe473b96e
+      internalID: -309046224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_10
+      name: GreyCat_10
       rect:
         serializedVersion: 2
-        x: 496
-        y: 315
-        width: 128
-        height: 127
+        x: 39
+        y: 225
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5754200ad1f4d124985cbab6d74de4e9
-      internalID: 1134732428
+      spriteID: 3fef8e64ed3a6144ea8995668f3e8f8e
+      internalID: 232952039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_11
+      name: GreyCat_11
       rect:
         serializedVersion: 2
-        x: 632
-        y: 315
-        width: 126
-        height: 128
+        x: 73
+        y: 225
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,20 +362,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a7e76fb7ea5e445bb4553d5a503039
-      internalID: -130376210
+      spriteID: 093689a3cb70a7342bdfa6c8be51ade4
+      internalID: -1242044899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_12
+      name: GreyCat_12
       rect:
         serializedVersion: 2
-        x: 770
-        y: 314
-        width: 128
-        height: 128
+        x: 8
+        y: 197
+        width: 13
+        height: 23
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,134 +383,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7829e59ee60454490d658e10fb858c
-      internalID: 2097486588
+      spriteID: 88a5613a29c167b4bb7ce03623f14063
+      internalID: 1440784711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_13
+      name: GreyCat_13
       rect:
         serializedVersion: 2
-        x: 34
-        y: 18
-        width: 384
-        height: 256
+        x: 7
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 127, y: 0, z: 127, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97e0cb00c776d974facab360d79288bf
-      internalID: 1010709087
+      spriteID: 02198f315c17e614b8d818bd9f4b6afb
+      internalID: -1603866661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_14
+      name: GreyCat_14
       rect:
         serializedVersion: 2
-        x: 425
-        y: 174
-        width: 640
-        height: 128
+        x: 26
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 255, y: 0, z: 255, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd8bbd0d143c97f46a4ae57c6a245108
-      internalID: -1118181638
+      spriteID: be164f52767473e41b1069e5a4e1e888
+      internalID: -1942496817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_15
+      name: GreyCat_15
       rect:
         serializedVersion: 2
-        x: 438
-        y: 18
-        width: 322
-        height: 128
+        x: 45
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 96, y: 0, z: 96, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd42d6011f3a1df449bf91bb4de0d7fe
-      internalID: -442007848
+      spriteID: 7bc3dd9ddb07c6543a4d9db4df473289
+      internalID: -496339516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_16
+      name: GreyCat_16
       rect:
         serializedVersion: 2
-        x: 782
-        y: 23
-        width: 382
-        height: 128
+        x: 64
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 126, y: 0, z: 126, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b9bade23d06174aab4c1e6c2cb9700
-      internalID: 395470041
+      spriteID: 6e87525ebd5f6974f918553e05bff08a
+      internalID: -542418106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_17
+      name: GreyCat_17
       rect:
         serializedVersion: 2
-        x: 18
-        y: 591
-        width: 640
-        height: 128
+        x: 83
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 255, y: 0, z: 255, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d1608b6ae1a7a84894f8b57f506fae8
-      internalID: 717557476
+      spriteID: 3832fc754fc1c7c4bb14c6a343777ed5
+      internalID: 1756041768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_18
+      name: GreyCat_18
       rect:
         serializedVersion: 2
-        x: 705
-        y: 590
-        width: 382
-        height: 128
+        x: 102
+        y: 164
+        width: 15
+        height: 29
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 126, y: 0, z: 126, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08670e9786e507f499793e40bca8b3e9
-      internalID: 1150146902
+      spriteID: 8cc108e182097784d86e9468251bbc66
+      internalID: -347936773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyCat_19
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 164
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc51c8c36d99474d936de58366a1551
+      internalID: 439098541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyCat_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 164
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa918c8f634235449ad65712d1b95384
+      internalID: 1667209989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyCat_21
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 133
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbd3375abd43e1f41add0a011c45c1e9
+      internalID: 670089598
       vertices: []
       indices: 
       edges: []
@@ -526,25 +589,29 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ground_9: 1359205669
-      ground_10: 1134732428
-      ground_7: 1543719014
-      ground_2: 927590489
-      ground_13: 1010709087
-      ground_16: 395470041
-      ground_14: -1118181638
-      ground_3: -1666868780
-      ground_1: -532854928
-      ground_11: -130376210
-      ground_12: 2097486588
-      ground_5: 259353855
-      ground_4: 212182268
-      ground_15: -442007848
-      ground_18: 1150146902
-      ground_0: 71918047
-      ground_6: -230808934
-      ground_17: 717557476
-      ground_8: 3623045
+      GreyCat_15: -496339516
+      GreyCat_10: 232952039
+      GreyCat_3: -2066206740
+      GreyCat_7: -932384451
+      GreyCat_8: 1561073103
+      GreyCat_12: 1440784711
+      GreyCat_22: -887346151
+      GreyCat_16: -542418106
+      GreyCat_0: -1510073340
+      GreyCat_18: -347936773
+      GreyCat_19: 439098541
+      GreyCat_20: 1667209989
+      GreyCat_14: -1942496817
+      GreyCat_11: -1242044899
+      GreyCat_6: -762655135
+      GreyCat_5: 528448992
+      GreyCat_4: 166052788
+      GreyCat_13: -1603866661
+      GreyCat_2: -1387281313
+      GreyCat_1: 1953721146
+      GreyCat_21: 670089598
+      GreyCat_17: 1756041768
+      GreyCat_9: -309046224
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
