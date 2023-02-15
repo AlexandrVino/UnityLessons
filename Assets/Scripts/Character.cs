@@ -34,6 +34,9 @@ public class Character : MonoBehaviour
         cc = GetComponent<CircleCollider2D>();
         hingleJoint = GetComponent<HingeJoint2D>();
         animator = GetComponent<Animator>();
+
+        // Task for setting const each 1 seconds 
+        ChangingConsts();
     }
 
     private void ChangeAnimation(string animation)
@@ -41,8 +44,6 @@ public class Character : MonoBehaviour
         if (animation == currAnimation) return;
         animator.Play(animation);
         currAnimation = animation;
-        // Task for setting const each 1 seconds 
-        ChangingConsts();
     }
 
     private void Update()
@@ -157,10 +158,11 @@ public class Character : MonoBehaviour
     {
         Task.Factory.StartNew(() =>
         {
+
             while (true)
             {
-                Thread.Sleep(1000);
                 if (!onRope) lastJoint = null;
+                Thread.Sleep(1000);
             }
         });
     }
