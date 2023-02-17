@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RopeJump : MonoBehaviour
 {
-
     // significant types
     public float resetConnectionColldown = 1.0f;
     public string lastJoint = "";
@@ -42,6 +41,4 @@ public class RopeJump : MonoBehaviour
             if (!hingleJoint.enabled) lastJoint = "";
         }
     }
-
-
 }

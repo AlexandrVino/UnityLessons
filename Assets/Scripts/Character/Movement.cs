@@ -60,7 +60,6 @@ public class Movement : MonoBehaviour
     private void Jump()
     {
         hingleJoint.enabled = false;
-
         if (extraJumpsCount > 0)
         {
             rigidBody.velocity = new Vector2(rigidBody.velocity.x, 0.0f);
@@ -73,9 +72,7 @@ public class Movement : MonoBehaviour
     {
         // False -> left; True -> right
         currSide = !currSide;
-        Vector2 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+        transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
