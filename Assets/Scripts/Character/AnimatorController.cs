@@ -14,33 +14,33 @@ public class AnimatorController : MonoBehaviour
     }
 
     // significant types
-    private string currAnimation = Animations.Default;
+    private string _currAnimation = Animations.Default;
 
     // reference types
-    private Movement movement;
+    private Movement _movement;
 
-    private Animator animator;
-    private HingeJoint2D hingleJoint;
+    private Animator _animator;
+    private HingeJoint2D _hingleJoint;
 
     private void Start()
     {
-        hingleJoint = GetComponent<HingeJoint2D>();
-        animator = GetComponent<Animator>();
-        movement = GetComponent<Movement>();
+        _hingleJoint = GetComponent<HingeJoint2D>();
+        _animator = GetComponent<Animator>();
+        _movement = GetComponent<Movement>();
     }
 
     private void ChangeAnimation(string animation)
     {
-        if (animation == currAnimation) return;
-        animator.Play(animation);
-        currAnimation = animation;
+        if (animation == _currAnimation) return;
+        _animator.Play(animation);
+        _currAnimation = animation;
     }
 
     private void FixedUpdate()
     {
-        if (hingleJoint.enabled) ChangeAnimation(Animations.Engagement);
-        else if (!movement.onGround) ChangeAnimation(Animations.Jump);
-        else if (movement.isRunning) ChangeAnimation(Animations.Run);
+        if (_hingleJoint.enabled) ChangeAnimation(Animations.Engagement);
+        else if (!_movement.OnGround) ChangeAnimation(Animations.Jump);
+        else if (_movement.IsRunning) ChangeAnimation(Animations.Run);
         else ChangeAnimation(Animations.Default);
     }
 }
