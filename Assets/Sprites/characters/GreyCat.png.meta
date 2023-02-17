@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GreyCat_0
+      name: default_0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_1
+      name: default_1
       rect:
         serializedVersion: 2
         x: 28
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_2
+      name: default_2
       rect:
         serializedVersion: 2
         x: 56
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_3
+      name: default_3
       rect:
         serializedVersion: 2
         x: 84
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_4
+      name: default_4
       rect:
         serializedVersion: 2
         x: 112
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_5
+      name: default_5
       rect:
         serializedVersion: 2
         x: 140
@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_6
+      name: jump_0
       rect:
         serializedVersion: 2
         x: 5
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_7
+      name: jump_1
       rect:
         serializedVersion: 2
         x: 32
@@ -285,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_8
+      name: jump_2
       rect:
         serializedVersion: 2
         x: 59
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_9
+      name: run_0
       rect:
         serializedVersion: 2
         x: 4
@@ -327,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_10
+      name: run_1
       rect:
         serializedVersion: 2
         x: 38
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_11
+      name: run_2
       rect:
         serializedVersion: 2
         x: 72
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_13
+      name: engagement_0
       rect:
         serializedVersion: 2
         x: 7
@@ -411,7 +411,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_14
+      name: engagement_1
       rect:
         serializedVersion: 2
         x: 26
@@ -432,7 +432,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_15
+      name: engagement_2
       rect:
         serializedVersion: 2
         x: 45
@@ -453,7 +453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_16
+      name: engagement_3
       rect:
         serializedVersion: 2
         x: 64
@@ -474,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_17
+      name: engagement_4
       rect:
         serializedVersion: 2
         x: 83
@@ -495,7 +495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_18
+      name: engagement_5
       rect:
         serializedVersion: 2
         x: 102
@@ -516,7 +516,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_19
+      name: engagement_6
       rect:
         serializedVersion: 2
         x: 120
@@ -537,7 +537,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_20
+      name: engagement_7
       rect:
         serializedVersion: 2
         x: 139
@@ -579,7 +579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_22
+      name: jump_3
       rect:
         serializedVersion: 2
         x: 86
@@ -600,10 +600,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_23
+      name: jump_4
       rect:
         serializedVersion: 2
-        x: 113
+        x: 114
         y: 106
         width: 26
         height: 23
@@ -621,7 +621,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_24
+      name: run_3
       rect:
         serializedVersion: 2
         x: 106
@@ -629,7 +629,7 @@ TextureImporter:
         width: 25
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -642,7 +642,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_25
+      name: run_4
       rect:
         serializedVersion: 2
         x: 140
@@ -650,7 +650,7 @@ TextureImporter:
         width: 25
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -663,12 +663,96 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GreyCat_26
+      name: run_5
       rect:
         serializedVersion: 2
         x: 174
         y: 226
         width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850b9610c0726a54b97ba4a93d7e5c5a
+      internalID: 1239197216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 106
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2f6f83072e4d246ac12858c1d2dba8
+      internalID: 1169715507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 106
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089427f130941264f8a418c1fec3ea27
+      internalID: 1218227047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_7
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 106
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551131075d18dc40b633ee42223c3e2
+      internalID: -303532184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 106
+        width: 24
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -677,8 +761,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 850b9610c0726a54b97ba4a93d7e5c5a
-      internalID: 1239197216
+      spriteID: 8885cfb73b11b5844ba102edf80d6589
+      internalID: 485791648
       vertices: []
       indices: 
       edges: []
@@ -694,33 +778,37 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GreyCat_15: -496339516
-      GreyCat_10: 232952039
-      GreyCat_3: -2066206740
-      GreyCat_7: -932384451
-      GreyCat_8: 1561073103
+      jump_2: 1561073103
+      run_1: 232952039
+      engagement_7: 1667209989
+      engagement_1: -1942496817
+      jump_8: 485791648
       GreyCat_12: 1440784711
-      GreyCat_22: -887346151
-      GreyCat_16: -542418106
-      GreyCat_26: 1239197216
-      GreyCat_0: -1510073340
-      GreyCat_18: -347936773
-      GreyCat_19: 439098541
-      GreyCat_20: 1667209989
-      GreyCat_23: -1435855164
-      GreyCat_14: -1942496817
-      GreyCat_11: -1242044899
-      GreyCat_6: -762655135
-      GreyCat_5: 528448992
-      GreyCat_4: 166052788
-      GreyCat_25: -739020996
-      GreyCat_13: -1603866661
-      GreyCat_2: -1387281313
-      GreyCat_1: 1953721146
+      default_1: 1953721146
+      jump_0: -762655135
+      engagement_3: -542418106
+      engagement_4: 1756041768
+      engagement_2: -496339516
+      run_2: -1242044899
+      jump_1: -932384451
+      run_4: -739020996
+      run_5: 1239197216
+      engagement_5: -347936773
+      engagement_0: -1603866661
+      engagement_6: 439098541
+      default_4: 166052788
+      jump_5: 1169715507
+      run_0: -309046224
+      jump_6: 1218227047
+      run_3: -189919367
+      default_5: 528448992
+      jump_7: -303532184
+      jump_3: -887346151
+      default_0: -1510073340
       GreyCat_21: 670089598
-      GreyCat_17: 1756041768
-      GreyCat_24: -189919367
-      GreyCat_9: -309046224
+      default_2: -1387281313
+      default_3: -2066206740
+      jump_4: -1435855164
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

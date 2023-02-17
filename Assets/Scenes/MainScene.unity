@@ -5094,8 +5094,11 @@ GameObject:
   - component: {fileID: 1579410606}
   - component: {fileID: 1579410610}
   - component: {fileID: 1579410609}
-  - component: {fileID: 1579410611}
   - component: {fileID: 1579410613}
+  - component: {fileID: 1579410614}
+  - component: {fileID: 1579410616}
+  - component: {fileID: 1579410617}
+  - component: {fileID: 1579410615}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -5237,24 +5240,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1579410611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1579410603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d7c109b8c451a54cb560aa000883f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 14
-  speed: 7
-  extraJumpsCount: 2
-  currSide: 1
-  onGround: 0
-  onRope: 0
 --- !u!58 &1579410612
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5295,6 +5280,62 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!114 &1579410614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579410603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c80f61fa5f550c43bc596d2f97f3351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 15
+  speed: 10
+  extraJumpsCount: 2
+  currSide: 1
+  onGround: 0
+  isRunning: 0
+--- !u!114 &1579410615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579410603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a3b5f9d410a8c9498cc72b666250654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1579410616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579410603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5721939cd995ca54ea6c5315537e72bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetConnectionColldown: 1
+  lastJoint: 
+--- !u!114 &1579410617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579410603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fdcb39fca4f656438efc64e3614c6ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1630125764
 GameObject:
   m_ObjectHideFlags: 0
