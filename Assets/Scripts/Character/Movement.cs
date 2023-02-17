@@ -85,6 +85,6 @@ public class Movement : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.TryGetComponent(out Rope rope)) OnGround = false; 
+        if (collider.gameObject.TryGetComponent(out Rope rope)) OnGround = false;
     }
 }
