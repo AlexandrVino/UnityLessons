@@ -14,6 +14,10 @@ public class RopeJump : MonoBehaviour
     private void Start()
     {
         _hingleJoint = GetComponent<HingeJoint2D>();
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(resetConnection());
     }
 

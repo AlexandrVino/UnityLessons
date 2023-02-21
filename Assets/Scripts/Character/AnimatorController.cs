@@ -18,6 +18,7 @@ public class AnimatorController : MonoBehaviour
 
     // reference types
     private Movement _movement;
+    private Slide _slide;
 
     private Animator _animator;
     private HingeJoint2D _hingleJoint;
@@ -27,6 +28,7 @@ public class AnimatorController : MonoBehaviour
         _hingleJoint = GetComponent<HingeJoint2D>();
         _animator = GetComponent<Animator>();
         _movement = GetComponent<Movement>();
+        _slide = GetComponent<Slide>();
     }
 
     private void ChangeAnimation(string animation)
@@ -39,8 +41,8 @@ public class AnimatorController : MonoBehaviour
     private void FixedUpdate()
     {
         if (_hingleJoint.enabled) ChangeAnimation(Animations.Engagement);
-        else if (!_movement.OnGround) ChangeAnimation(Animations.Jump);
-        else if (_movement.IsRunning) ChangeAnimation(Animations.Run);
+        else if (!_slide._onGround) ChangeAnimation(Animations.Jump);
+        else if (_movement._isRunning) ChangeAnimation(Animations.Run);
         else ChangeAnimation(Animations.Default);
     }
 }
