@@ -13,18 +13,20 @@ public class RopeJump : MonoBehaviour
 
     private void Start()
     {
+        // initialize reference varibles 
         _hingleJoint = GetComponent<HingeJoint2D>();
     }
 
     private void OnEnable()
     {
+        // Start calldown corutine 
         StartCoroutine(resetConnection());
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
 
-        if (collider.gameObject.transform.parent.TryGetComponent(out Rope rope))
+        if (collider.gameObject.transform?.parent != null & collider.gameObject.transform.parent.TryGetComponent(out Rope rope))
         {
             // check than the last connected item != current
             if (_lastJoint == rope) return;
@@ -39,6 +41,10 @@ public class RopeJump : MonoBehaviour
 
     private IEnumerator resetConnection()
     {
+        /*
+         Method - calldown to cling to the same rope
+        */
+
         while (true)
         {
             yield return new WaitForSeconds(ResetConnectionColldown);

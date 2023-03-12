@@ -19,6 +19,7 @@ public class Slide : MonoBehaviour
     private Rigidbody2D _rigidBody;
     private HingeJoint2D _hingleJoint;
 
+    private Vector2? _surfaceNormal;
     private Vector2 _groundNormal;
     private Vector2 _targetVelocity;
     private bool _grounded;
@@ -46,8 +47,11 @@ public class Slide : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
-        Vector2 alongSurface = Vector2.Perpendicular(_groundNormal);
-        _targetVelocity = alongSurface * _speed;
+        Debug.DrawLine(
+            transform.position,
+            (Vector2)transform.position + (_surfaceNormal ?? new Vector2(0.0f, 0.0f)) * 2,
+            Color.red
+        );
 
         if (_onGround) _extraJumpsCount = 2;
     }
@@ -55,7 +59,6 @@ public class Slide : MonoBehaviour
     void FixedUpdate()
     {
         _velocity = _gravityModifier * Physics2D.gravity * Time.deltaTime * (_grounded || _hingleJoint.enabled ? 0.0f : _speed);
-        _velocity.x = _targetVelocity.x;
 
         _grounded = false;
 
@@ -98,10 +101,7 @@ public class Slide : MonoBehaviour
                 }
 
                 float projection = Vector2.Dot(_velocity, currentNormal);
-                if (projection < 0)
-                {
-                    _velocity = _velocity - projection * currentNormal;
-                }
+                if (projection < 0) _velocity = _velocity - projection * currentNormal;
 
                 float modifiedDistance = _hitBufferList[i].distance - ShellRadius;
                 distance = modifiedDistance < distance ? modifiedDistance : distance;
@@ -116,32 +116,54 @@ public class Slide : MonoBehaviour
         _hingleJoint.enabled = false;
         if (_extraJumpsCount > 0)
         {
+            Vector2 forceDirection = _surfaceNormal ?? new Vector2(0.0f, 1.0f);
+
             _velocity = new Vector2(_velocity.x, 0.0f);
             _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, 0.0f);
-            _rigidBody.AddForce(new Vector2(0, _jumpForce), ForceMode2D.Impulse);
+
+            _rigidBody.AddForce(forceDirection * _jumpForce, ForceMode2D.Impulse);
             _extraJumpsCount--;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Surface surface)) _onGround = true;
+        if (collision.gameObject.TryGetComponent(out Surface surface))
+        {
+            _onGround = true;
+            _surfaceNormal = collision.contacts[0].normal;
+        }
         else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = true;
+        else if (collision.gameObject.CompareTag("coin")) _onGround = true;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Surface surface))
+        {
+            _onGround = true;
+            _surfaceNormal = collision.contacts[0].normal;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent(out Surface surface)) _onGround = false;
+        if (collision.gameObject.TryGetComponent(out Surface surface))
+        {
+            _onGround = false;
+            _surfaceNormal = null;
+        }
         else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = false;
+        else if (collision.gameObject.CompareTag("coin")) _onGround = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.transform.parent.TryGetComponent(out Rope rope)) _onGround = true;
+        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) _onGround = true;
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.transform.parent.TryGetComponent(out Rope rope)) _onGround = false;
+        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) _onGround = false;
     }
 }
