@@ -26,7 +26,7 @@ public class RopeJump : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
 
-        if (collider.gameObject.transform?.parent != null & collider.gameObject.transform.parent.TryGetComponent(out Rope rope))
+        if (collider.gameObject.transform?.parent != null && collider.gameObject.transform.parent.TryGetComponent(out Rope rope))
         {
             // check than the last connected item != current
             if (_lastJoint == rope) return;

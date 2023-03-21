@@ -7,6 +7,7 @@ public class HPController : MonoBehaviour
     /*
      * Class to control HP value of character
     */
+    [SerializeField] private Interface _interface;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -14,7 +15,12 @@ public class HPController : MonoBehaviour
          Method for control character condishion,
          if he contact with some dangerous or useful objects
         */
-        if (collider.gameObject.TryGetComponent(out DeathZone deathZone)) 
+        if (collider.gameObject.TryGetComponent(out DeathZone deathZone))
+        {
             transform.position = new Vector2(-17.0f, -3.0f);
+            _interface.RemoveHP();
+        }
+
+        
     }
 }

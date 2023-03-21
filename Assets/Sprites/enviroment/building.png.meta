@@ -567,7 +567,7 @@ TextureImporter:
         height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 70, y: 170, z: 70, w: 40}
+      border: {x: 70, y: 110, z: 70, w: 87}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -967,7 +967,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      building_35: -1588910162
+      building_8: 1929916030
       building_36: -1926310339
       building_22: 797230440
       building_24: -2111423896
@@ -1006,7 +1006,7 @@ TextureImporter:
       building_26: 422725736
       building_27: -1270995221
       building_7: 1274173128
-      building_8: 1929916030
+      building_35: -1588910162
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

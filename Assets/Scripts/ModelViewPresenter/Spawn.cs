@@ -28,7 +28,9 @@ public class Spawn : MonoBehaviour
 
         if (chance < 70)
         {
-            _factory.CreateCoin(new Coin(GetRandomPositionOutsideScreen(), 0.0f));
+            _factory.CreateCoin(new Coin(
+                GetRandomPositionOutsideScreen(), 0.0f)
+            );
         }
     }
 
