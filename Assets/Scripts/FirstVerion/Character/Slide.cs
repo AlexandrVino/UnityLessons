@@ -9,8 +9,6 @@ public class Slide : MonoBehaviour
     [SerializeField] private Vector2 _velocity;
     [SerializeField] private LayerMask _layerMask;
     [SerializeField] private float _speed;
-    [SerializeField] private float _jumpForce = 15.0f;
-    [SerializeField] private int _extraJumpsCount = 2;
 
     // flags Interaction with some objects
     // for example Rope, surface, ets
@@ -45,15 +43,12 @@ public class Slide : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) Jump();
-
         Debug.DrawLine(
             transform.position,
             (Vector2)transform.position + (_surfaceNormal ?? new Vector2(0.0f, 0.0f)) * 2,
             Color.red
         );
 
-        if (_onGround) _extraJumpsCount = 2;
     }
 
     void FixedUpdate()
@@ -109,61 +104,5 @@ public class Slide : MonoBehaviour
         }
 
         _rigidBody.position = _rigidBody.position + move.normalized * distance;
-    }
-
-    private void Jump()
-    {
-        _hingleJoint.enabled = false;
-        if (_extraJumpsCount > 0)
-        {
-            Vector2 forceDirection = _surfaceNormal ?? new Vector2(0.0f, 1.0f);
-
-            _velocity = new Vector2(_velocity.x, 0.0f);
-            _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, 0.0f);
-
-            _rigidBody.AddForce(forceDirection * _jumpForce, ForceMode2D.Impulse);
-            _extraJumpsCount--;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Surface surface))
-        {
-            _onGround = true;
-            _surfaceNormal = collision.contacts[0].normal;
-        }
-        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = true;
-        else if (collision.gameObject.CompareTag("coin")) _onGround = true;
-    }
-
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Surface surface))
-        {
-            _onGround = true;
-            _surfaceNormal = collision.contacts[0].normal;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.TryGetComponent(out Surface surface))
-        {
-            _onGround = false;
-            _surfaceNormal = null;
-        }
-        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = false;
-        else if (collision.gameObject.CompareTag("coin")) _onGround = false;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) _onGround = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collider)
-    {
-        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) _onGround = false;
     }
 }

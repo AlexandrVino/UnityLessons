@@ -54,7 +54,7 @@ public class AnimatorController : MonoBehaviour
         */
 
         if (_hingleJoint.enabled) ChangeAnimation(Animations.Engagement);
-        else if (!_slide._onGround) ChangeAnimation(Animations.Jump);
+        else if (!_movement._onGround) ChangeAnimation(Animations.Jump);
         else if (_movement._isRunning) ChangeAnimation(Animations.Run);
         else ChangeAnimation(Animations.Default);
     }
