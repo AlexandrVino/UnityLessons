@@ -15,7 +15,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _jumpForce = 20.0f;
     [SerializeField] private int _extraJumpsCount = 2;
     [SerializeField] internal bool _onGround = false;
-    [SerializeField] internal bool _grounded = false;
     [SerializeField] private Vector2? _velocity;
 
     // reference types of scripts
@@ -49,8 +48,8 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) Jump();
 
         if (
-            Input.GetKeyDown(KeyCode.D) && !_currSide ||
-            Input.GetKeyDown(KeyCode.A) && _currSide
+            (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) && !_currSide ||
+            (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) && _currSide
         ) Flip();
 
         if (_onGround) _extraJumpsCount = 2;
@@ -61,11 +60,20 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Surface surface))
         {
             _onGround = true;
-            _grounded = true;
-
+            _hingleJoint.enabled = false;
             _surfaceNormal = CountSurfaceNormal(collision);
         }
-        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) (_grounded, _onGround) = (true, true);
+        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = true;
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out Surface surface))
+        {
+            _onGround = true;
+            _surfaceNormal = CountSurfaceNormal(collision);
+        }
+        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = true;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -73,15 +81,16 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Surface surface))
         {
             _onGround = false;
-            _grounded = false;
             _surfaceNormal = null;
+            _hingleJoint.enabled = false;
+
         }
-        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) (_grounded, _onGround) = (true, true);
+        else if (collision.gameObject.TryGetComponent(out RopeBracing ropeBracing)) _onGround = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) (_grounded, _onGround) = (false, true); ;
+        if (collider.gameObject.transform?.parent?.TryGetComponent(out Rope rope) ?? false) _onGround = true;
     }
 
     private void OnTriggerExit2D(Collider2D collider)
@@ -101,6 +110,7 @@ public class Movement : MonoBehaviour
 
             _rigidBody.AddForce(forceDirection * _jumpForce, ForceMode2D.Impulse);
             _extraJumpsCount--;
+            _surfaceNormal = null;
         }
     }
 
@@ -112,8 +122,6 @@ public class Movement : MonoBehaviour
         */
 
         _isRunning = Input.GetAxis("Horizontal") != 0.0f;
-
-        if (_hingleJoint.enabled && _grounded) return;
 
         transform.position = (
             _rigidBody.position + Vector2.right * Input.GetAxis("Horizontal") * _speed * Time.deltaTime
